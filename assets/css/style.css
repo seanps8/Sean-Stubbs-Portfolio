@@ -22,7 +22,7 @@ h6 {
     font-family: 'Montserrat';
   }
   
-  #mainNav .navbar-brand {
+  #mainNav .navbar-brand .prof-link {
     color: #fff;
   }
   
@@ -125,7 +125,7 @@ h6 {
     opacity: 1;
   }
   
-  .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content, p {
+  .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content, p, .label-text {
     font-size: 1.5rem;
   }
   
@@ -136,5 +136,14 @@ h6 {
     .portfolio .portfolio-item {
       margin-bottom: 30px;
     }
+  }
+
+  form {
+    align-content: center;
+  }
+
+  .profLogo {
+    height: 2rem;
+    width: 2rem;
   }
 
