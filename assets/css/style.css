@@ -20,6 +20,8 @@ h6 {
     padding-bottom: 1rem;
     font-weight: 700;
     font-family: 'Montserrat';
+    position: fixed;
+    width: 100%;
   }
   
   #mainNav .navbar-brand .prof-link {
@@ -36,7 +38,7 @@ h6 {
   }
   
   #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-    color: #18BC9C;
+    color: #7A9D96;
   }
   
   #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
@@ -44,7 +46,7 @@ h6 {
   }
   
   #mainNav .navbar-nav li.nav-item a.nav-link.active {
-    color: #18BC9C;
+    color: #7A9D96;
   }
   
   #mainNav .navbar-toggler {
@@ -87,14 +89,17 @@ h6 {
   #profPic {
       height: 300px;
       width: 300px;
+      border-radius: 50%;
+      margin: auto;
   }
 
   .masthead {
       padding: 6rem 0;
+      background-color: #00303F;
   }
   
   section {
-    padding: 6rem 0;
+    padding: 5rem 0;
   }
 
   section h2 {
@@ -111,6 +116,7 @@ h6 {
 
   .portfolio {
     margin-bottom: -15px;
+    background-color: #7A9D96;
   }
   
   .portfolio .portfolio-item {
@@ -145,5 +151,30 @@ h6 {
   .profLogo {
     height: 2rem;
     width: 2rem;
+    mix-blend-mode: multiply;
+  }
+
+  .projectImage {
+    height: 250px;
+    width: auto;
+    border-radius: 6px;
+    margin: 1rem;
+    position: relative;
+    box-shadow: 4px 4px 10px rgb(56, 56, 56);
+    transition: all .2s ease-in-out;
+  }
+
+  .projectImage:hover {
+    box-shadow: 8px 8px 20px rgb(56, 56, 56);
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  .projectImage:active {
+    transform: translate(1px, 1px);
+  }
+
+  hr {
+    color: white;
   }
 

@@ -44,11 +44,14 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
                             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Projects</a>
                         </li>
                         <li class="nav-item mx-0 mx-lg-1">
-                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
-                        </li>
+                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#education">Education</a>
+                            </li>
                         <li class="nav-item mx-0 mx-lg-1">
                             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
                         </li>
@@ -57,14 +60,14 @@
             </div>
         </nav>
     </div>
-    <div class="row">
+    <div class="row" id="about">
         <div class="col-md-12">
             <!-- Header -->
-            <header class="masthead bg-primary text-white text-center">
+            <header class="masthead text-white text-center">
                 <div class="container">
                     <img class="img-fluid mb-5 d-block mx-auto" id="profPic" src="assets/images/rome.jpg" alt="">
                     <h1 class="text-uppercase mb-0">Sean Stubbs</h1>
-                    <!-- <hr class="star-light"> -->
+                    <hr>
                     <h2 class="font-weight-light mb-0">Full Stack Web Developer</h2>
                     <a class="prof-link h-20 w-20" href="https://github.com/seanps8" target="_blank">
                         <img class="img-fluid profLogo" src="assets/images/github.jpg" alt="">
@@ -77,12 +80,28 @@
         </div>
     </div>
 
-    <!-- Portfolio Grid Section -->
+    <!-- Projects Grid Section -->
     <section class="portfolio" id="portfolio">
         <div class="container">
-            <h2 class="text-center text-uppercase text-secondary mb-0">Projects</h2>
-            <!-- <hr class="star-dark mb-5"> -->
+            <h2 class="text-center text-uppercase text-white mb-0">Projects</h2>
+            <hr>
             <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="https://gwtaskmaster.herokuapp.com/" target="_blank">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid projectImage" src="assets/images/taskMaster.JPG" alt="">
+                    </a>
+                    <p>GW TaskMaster<span>
+                        <a class="prof-link h-20 w-20" href="https://github.com/seanps8/project3.git" target="_blank">
+                            <img class="img-fluid profLogo" src="assets/images/github.jpg" alt="">
+                        </a>
+                    </span></p>
+                        
+                </div>
                 <div class="col-md-6 col-lg-4">
                     <a class="portfolio-item d-block mx-auto" href="https://dry-falls-52563.herokuapp.com/" target="_blank">
                         <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
@@ -90,12 +109,14 @@
                                 <i class="fas fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="assets/images/Hangouts.JPG" alt="">
+                        <img class="img-fluid projectImage" src="assets/images/Hangouts.JPG" alt="">
                     </a>
-                    <p>GW Hangouts</p><span>
-                        <a class="prof-link h-20 w-20" href="https://github.com/aishtiaq/project-2.git" target="_blank">
+                    <p>GW Hangouts<span>
+                        <a class="prof-link h-20 w-20" href="https://github.com/seanps8/project-2.git" target="_blank">
                             <img class="img-fluid profLogo" src="assets/images/github.jpg" alt="">
-                        </a></span>
+                        </a>
+                    </span></p>
+                        
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a class="portfolio-item d-block mx-auto" href="https://seanps8.github.io/Project-1-Final/" target="_blank">
@@ -104,12 +125,14 @@
                                 <i class="fas fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="assets/images/foodFinder.jpg" alt="">
+                        <img class="img-fluid projectImage" src="assets/images/foodFinder.jpg" alt="">
                     </a>
-                    <p>Food Finders</p><span>
-                            <a class="prof-link h-20 w-20" href="https://github.com/seanps8/Project-1-Final.git" target="_blank">
-                                <img class="img-fluid profLogo" src="assets/images/github.jpg" alt="">
-                            </a></span>
+                    <p>Food Finders<span>
+                        <a class="prof-link h-20 w-20" href="https://github.com/seanps8/Project-1-Final.git" target="_blank">
+                            <img class="img-fluid profLogo" src="assets/images/github.jpg" alt="">
+                        </a>
+                    </span></p>
+                            
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a class="portfolio-item d-block mx-auto" href="https://murmuring-stream-25841.herokuapp.com/" target="_blank">
@@ -118,40 +141,44 @@
                                 <i class="fas fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="assets/images/burger.jpg" alt="">
+                        <img class="img-fluid projectImage" src="assets/images/burger.jpg" alt="">
                     </a>
-                    <p>Eat-Da-Burger</p><span>
-                            <a class="prof-link h-20 w-20" href="https://github.com/seanps8/Burger.git" target="_blank">
-                                <img class="img-fluid profLogo" src="assets/images/github.jpg" alt="">
-                            </a></span>
+                    <p>Eat-Da-Burger<span>
+                        <a class="prof-link h-20 w-20" href="https://github.com/seanps8/Burger.git" target="_blank">
+                            <img class="img-fluid profLogo" src="assets/images/github.jpg" alt="">
+                        </a>
+                    </span></p>
+                            
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <a class="portfolio-item d-block mx-auto" href="https://seanps8.github.io/Train-Scheduler/" target="_blank">
+                    <a class="portfolio-item d-block mx-auto" href="https://react-book-search.herokuapp.com/" target="_blank">
                         <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                             <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                                 <i class="fas fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="assets/images/trainScheduler.jpg" alt="">
+                        <img class="img-fluid projectImage" src="assets/images/googleBooks.JPG" alt="">
                     </a>
-                    <p>Train Scheduler</p><span>
-                            <a class="prof-link h-20 w-20" href="https://github.com/seanps8/Train-Scheduler.git" target="_blank">
-                                <img class="img-fluid profLogo" src="assets/images/github.jpg" alt="">
-                            </a></span>
+                    <p>React Google Books<span>
+                        <a class="prof-link h-20 w-20" href="https://github.com/seanps8/react-book-search.git" target="_blank">
+                            <img class="img-fluid profLogo" src="assets/images/github.jpg" alt="">
+                        </a>
+                    </span></p>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <a class="portfolio-item d-block mx-auto" href="https://seanps8.github.io/Giphy-API/" target="_blank">
+                    <a class="portfolio-item d-block mx-auto" href="https://aqueous-everglades-80914.herokuapp.com/" target="_blank">
                         <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                             <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                                 <i class="fas fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="assets/images/minion.jpg" alt="">
+                        <img class="img-fluid projectImage" src="assets/images/minion.jpg" alt="">
                     </a>
-                    <p>Giphy API - GIF Generator</p><span>
-                            <a class="prof-link h-20 w-20" href="https://github.com/seanps8/Giphy-API.git" target="_blank">
-                                <img class="img-fluid profLogo" src="assets/images/github.jpg" alt="">
-                            </a></span>
+                    <p>MongoDB NYT Web Scraper<span>
+                        <a class="prof-link h-20 w-20" href="https://github.com/seanps8/Mongo-Web-Scraper.git" target="_blank">
+                            <img class="img-fluid profLogo" src="assets/images/github.jpg" alt="">
+                        </a>
+                    </span></p>
                 </div>
 
             </div>
